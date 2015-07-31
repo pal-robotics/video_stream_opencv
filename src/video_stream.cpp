@@ -36,7 +36,7 @@ sensor_msgs::CameraInfo get_default_camera_info_from_image(sensor_msgs::ImagePtr
     cam_info_msg.height = img->height;
     cam_info_msg.width = img->width;
     // Add the most common distortion model as sensor_msgs/CameraInfo says
-    cam_info_msg.distortion_model = "plumb_bob";
+    cam_info_msg.distortion_model = "plumb_bomb";
     // Don't let distorsion matrix be empty
     cam_info_msg.D.resize(5, 0.0);
     // Give a reasonable default intrinsic camera matrix
